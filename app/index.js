@@ -11,21 +11,18 @@ const searchResult = document.querySelector('.bottom');
 function searchForShow(name) {
   fetch(`http://netflixroulette.net/api/api.php?title=${name}`)
     // once I have data, turn it into a javascript object and perform work
-    .then((res) => res.json())
+    .then(res => res.json())
     .then((data) => {
       // I defined searchResult to represent .bottom
       fillInResult(searchResult, data);
     });
 }
 
-searchForShow('Attack On Titan');
+// searchForShow('Attack On Titan');
 
 // argument is unnecessary here since the fetch fetches data for Attack on Titan no matter what right?
 
-  // do I need the %20 to represent spaces?
-searchForm.addEventListener('click', () => {
-
-  return searchForShow(searchInput.value); //searchInput.value finds whatever searchInput/.search contains at present
-});
+searchForm.addEventListener('click', () => searchForShow(searchInput.value) // searchInput.value finds whatever searchInput/.search contains at present
+);
 
 // when button is clicked, function runs for whatever value is typed
