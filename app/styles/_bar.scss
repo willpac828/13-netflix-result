@@ -1,0 +1,21 @@
+
+$c-grey: #b1b2b5;
+$c-search-background: #1f67b1;
+$c-submit: #eee;
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  flex-grow: 1;
+  color: $c-grey;
+  padding: .5rem;
+}
+
+.search-submit {
+  background-color: #1f67b1;
+  color: $c-submit;
+  padding: .5rem;
+};
