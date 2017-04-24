@@ -7,6 +7,6 @@ export default function fillInResult(element, data) {
   element.querySelector('.movie-summary__text').innerText = data.summary;
   element.querySelector('.movie-actors__text').innerText = data.show_cast;
 
-  // MUST REMEMBER TO RETURN so that w/e is calling this function gets a value back
+  // MUST REMEMBER TO RETURN so that w/e is calling this function gets a value back2
   return element;
 }

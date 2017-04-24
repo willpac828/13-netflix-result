@@ -18,7 +18,7 @@ function searchForShow(name) {
     });
 }
 
-// searchForShow('Attack On Titan');
+searchForShow('Attack On Titan');
 
 // argument is unnecessary here since the fetch fetches data for Attack on Titan no matter what right?
 
